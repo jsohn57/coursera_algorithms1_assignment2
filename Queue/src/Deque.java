@@ -99,6 +99,10 @@ public class Deque<Item> implements Iterable<Item> {
 	}
 	
 	public Iterator<Item> iterator(){
+		
+		// *** anonymous class object that implements Iterator interface ***
+		// anonymous class is used to create an instance of class that either IMPLEMENTS INTERFACE
+		// or EXTENDS ANOTHER CLASS
 		Iterator<Item> it = new Iterator<Item>(){
 
 			private Node current = first;
